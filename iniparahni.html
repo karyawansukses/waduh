@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Berjalan</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0; /* Warna latar belakang halaman */
+        }
+
+        .marquee {
+            overflow: hidden;
+            white-space: nowrap;
+            width: 100vw; /* Lebar viewport untuk memastikan lebar penuh layar */
+            box-sizing: border-box;
+            padding: 10px;
+            background-color: #000000; /* Warna latar belakang marquee */
+        }
+
+        .marquee p {
+            display: inline-block;
+            font-size: 8em; /* Ukuran teks yang besar, Anda bisa menyesuaikan sesuai kebutuhan */
+            padding-left: 100%; /* Posisi awal teks di luar tampilan */
+            color: #ffffff; /* Warna teks putih */
+            font-weight: bold; /* Membuat teks tebal */
+            animation: marquee 15s linear infinite;
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(100%); /* Mulai dari luar kanan */
+            }
+            100% {
+                transform: translateX(-100%); /* Berakhir di luar kiri */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="marquee">
+        <p>MAU NGELUARIN JURUS APALAGI LU BUAT NGIBULIN GUE HAAHHHHH!!:)</p>
+    </div>
+</body>
+</html>
